@@ -37,7 +37,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="/" className="font-script text-brown text-2xl">
-              A & S
+              S & A
             </a>
 
             {/* Desktop navigation */}

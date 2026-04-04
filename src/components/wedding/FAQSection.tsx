@@ -12,18 +12,18 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Where will the wedding take place?",
-      answer: "Residence Ostrov — Entertainment & Recreation Center. 173 Kanysh Satpayev Avenue, Astana, Kazakhstan.",
+      answer: "Dilu Plaza.Korgalzhyn Highway E-126, 6A, Astana, Kazakhstan.",
       image: faq1,
       link: "https://maps.app.goo.gl/XrHUemfraZqF6pKV8",
     },
     {
       question: "What time should I arrive?",
-      answer: "Starts at 16:00. Dinner at 18:30, followed by celebration. Ends at 23:00. Please arrive at least 30 minutes before the ceremony starts so you have time to settle in.",
+      answer: "Starts at 17:00. Dinner at 18:30, followed by celebration. Ends at 23:00. Please arrive at least 30 minutes before the ceremony starts so you have time to settle in.",
       image: faq2,
     },
     {
       question: "What should I wear?",
-      answer: "We'd love to see you in pastel colors — think soft pinks, lavenders, mint greens, or baby blues. But honestly, wear whatever makes you feel comfortable and beautiful!",
+      answer: "Classic dress code — smart and elegant. No strict rules, just come looking your best and feeling comfortable!",
       image: faq3,
     },
   ];
