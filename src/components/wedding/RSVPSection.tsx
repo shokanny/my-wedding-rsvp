@@ -45,14 +45,18 @@ const RSVPSection = () => {
     setStatus("sending");
 
     try {
+      const payload = {
+        ...formData,
+        timestamp: new Date().toISOString(),
+      };
+      const params = new URLSearchParams();
+      for (const [key, value] of Object.entries(payload)) {
+        params.append(key, value);
+      }
       await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
         mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-        }),
+        body: params,
       });
       setStatus("success");
       setFormData({ name: "", email: "", attending: "", guests: "1", message: "", code: "" });
