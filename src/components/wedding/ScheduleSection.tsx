@@ -29,7 +29,7 @@ const ScheduleSection = () => {
             <div className="image-frame-thick inline-block">
               <img
                 src={couplePhoto}
-                alt="Ayazhan and Shokan"
+                alt="Shokan and Ayazhan"
                 className="w-full max-w-md mx-auto"
               />
             </div>

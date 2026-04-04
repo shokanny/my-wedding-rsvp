@@ -153,7 +153,7 @@ const MaidOfHonour = () => {
                   Your Journey, Covered
                 </h3>
                 <p className="text-sm">
-                  Your round-trip flight from Astana to Oskemen and back is on me.
+                  Your round-trip flight from Astana to Astana and back is on me.
                   Just pack your favourite outfit and leave the rest to me.
                 </p>
               </motion.div>
@@ -168,7 +168,7 @@ const MaidOfHonour = () => {
                   A Place to Rest
                 </h3>
                 <p className="text-sm">
-                  Your hotel in Oskemen is taken care of for the whole celebration.
+                  Your hotel in Astana is taken care of for the whole celebration.
                   Consider it a little thank-you for years of friendship.
                 </p>
               </motion.div>
@@ -179,7 +179,7 @@ const MaidOfHonour = () => {
                 animate={isMessageInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                See you in Oskemen, love.
+                See you in Astana, love.
               </motion.p>
             </div>
           </motion.div>

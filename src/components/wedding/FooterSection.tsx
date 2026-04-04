@@ -46,7 +46,7 @@ const FooterSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <p className="font-script text-brown text-3xl md:text-4xl mb-2">
-            Ayazhan & Shokan
+            Shokan & Ayazhan
           </p>
           <p className="font-body text-brown-light text-sm tracking-widest">
             With love
