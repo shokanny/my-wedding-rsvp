@@ -84,7 +84,7 @@ const MaidOfHonour = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Ayazhan's Qyz Uzatu — August 7, 2026
+            Toi — August 14, 2026
           </motion.p>
         </div>
 

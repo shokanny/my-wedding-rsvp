@@ -12,7 +12,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Where will the wedding take place?",
-      answer: "Residence Ostrov — Entertainment & Recreation Center. 173 Kanysh Satpayev Avenue, Ust-Kamenogorsk (Oskemen), 070014, Kazakhstan.",
+      answer: "Residence Ostrov — Entertainment & Recreation Center. 173 Kanysh Satpayev Avenue, Astana, Kazakhstan.",
       image: faq1,
       link: "https://maps.app.goo.gl/XrHUemfraZqF6pKV8",
     },

@@ -36,7 +36,7 @@ Mirrors `HeroSection.tsx` exactly in structure. Uses `section-cream py-24 md:py-
   - Overline: `font-body text-brown-light tracking-[0.3em] uppercase text-sm` — text: `"A Special Question"`
   - `<h1>`: `font-script text-brown text-4xl md:text-6xl lg:text-7xl font-medium leading-tight` — text: `"Will you be my Maid of Honour?"`
   - `<div className="elegant-divider-long mt-12 mb-8" />` with `scaleX` entrance animation.
-  - Sub-heading: `font-script text-brown text-2xl md:text-3xl` — text: `"Ayazhan's Qyz Uzatu — August 7, 2026"`
+  - Sub-heading: `font-script text-brown text-2xl md:text-3xl` — text: `"Toi — August 14, 2026"`
 
 **Section 2 — Heartfelt message + travel & hotel cards (cream-dark cards, scroll-triggered)**
 

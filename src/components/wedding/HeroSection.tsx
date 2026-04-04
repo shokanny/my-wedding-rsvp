@@ -62,7 +62,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          Ayazhan's Qyz Uzatu
+          Toi
         </motion.h1>
 
         <motion.div
@@ -78,7 +78,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          August 7, 2026
+          August 14, 2026
         </motion.p>
 
         <motion.p
@@ -87,7 +87,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.0 }}
         >
-          Oskemen, Kazakhstan
+          Astana, Kazakhstan
         </motion.p>
 
         <motion.a
