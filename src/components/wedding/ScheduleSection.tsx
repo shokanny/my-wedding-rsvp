@@ -8,11 +8,11 @@ const ScheduleSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const events = [
-    { time: "16:00", event: "Arrival & Welcome" },
-    { time: "16:00", event: "Ceremony" },
-    { time: "18:30", event: "Dinner" },
-    { time: "20:00", event: "Celebration" },
-    { time: "23:00", event: "End" },
+    { time: "17:00", event: "Arrival & Welcome" },
+    { time: "17:00", event: "Ceremony" },
+    { time: "18:00", event: "Dinner" },
+    { time: "19:00", event: "Celebration" },
+    { time: "00:00", event: "End" },
   ];
 
   return (

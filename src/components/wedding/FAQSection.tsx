@@ -18,7 +18,7 @@ const FAQSection = () => {
     },
     {
       question: "What time should I arrive?",
-      answer: "Starts at 17:00. Dinner at 18:30, followed by celebration. Ends at 23:00. Please arrive at least 30 minutes before the ceremony starts so you have time to settle in.",
+      answer: "Starts at 17:00. Dinner at 18:00, celebration at 19:00. Ends at midnight. Please arrive at least 30 minutes before the ceremony starts so you have time to settle in.",
       image: faq2,
     },
     {

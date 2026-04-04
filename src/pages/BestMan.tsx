@@ -7,7 +7,7 @@ import leftBottomHome from "@/assets/left-bottom-home.png";
 import rightBottomFlower from "@/assets/right-bottom-flower.png";
 import flowerDecor from "@/assets/flower-.png";
 
-const MaidOfHonour = () => {
+const BestMan = () => {
   const messageRef = useRef(null);
   const isMessageInView = useInView(messageRef, { once: true, margin: "-100px" });
 
@@ -57,7 +57,7 @@ const MaidOfHonour = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Dear Gulim
+            Dear Temirlan
           </motion.p>
 
           <motion.h1
@@ -68,7 +68,7 @@ const MaidOfHonour = () => {
           >
             Will you be my
             <br />
-            Maid of Honour?
+            Best Man?
           </motion.h1>
 
           <motion.div
@@ -84,7 +84,7 @@ const MaidOfHonour = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Toi — August 14, 2026
+            Shokan and Ayazhan Toi — August 14, 2026
           </motion.p>
         </div>
 
@@ -130,9 +130,8 @@ const MaidOfHonour = () => {
                 animate={isMessageInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                Through all the late-night talks, the silly laughter only we understand,
-                and the quiet moments that didn't need any words — you've been my person.
-                Thank you for always showing up, exactly as you are.
+                Through all the years, the laughs, the moments that made us who we are —
+                you've always had my back. Thank you for being that person I can always count on.
               </motion.p>
 
               <motion.p
@@ -140,7 +139,7 @@ const MaidOfHonour = () => {
                 animate={isMessageInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                I can't imagine this day without you standing next to me.
+                I can't imagine this day without you standing by my side.
               </motion.p>
 
               <motion.div
@@ -169,7 +168,7 @@ const MaidOfHonour = () => {
                 </h3>
                 <p className="text-sm">
                   Your hotel in Astana is taken care of for the whole celebration.
-                  Consider it a little thank-you for years of friendship.
+                  Consider it a little thank-you for years of brotherhood.
                 </p>
               </motion.div>
 
@@ -179,7 +178,7 @@ const MaidOfHonour = () => {
                 animate={isMessageInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                See you in Astana, love.
+                See you in Astana, brother.
               </motion.p>
             </div>
           </motion.div>
@@ -191,4 +190,4 @@ const MaidOfHonour = () => {
   );
 };
 
-export default MaidOfHonour;
+export default BestMan;
