@@ -4,50 +4,50 @@
 
 @layer base {
   :root {
-    /* Wedding palette - warm ivory, sage, dusty rose, gold */
-    --background: 40 33% 97%;
-    --foreground: 25 30% 20%;
+    /* Wedding palette - cool ivory, sage, dusty rose, silver */
+    --background: 220 20% 97%;
+    --foreground: 220 20% 18%;
 
-    --card: 40 33% 97%;
-    --card-foreground: 25 30% 20%;
+    --card: 220 20% 97%;
+    --card-foreground: 220 20% 18%;
 
-    --popover: 40 33% 97%;
-    --popover-foreground: 25 30% 20%;
+    --popover: 220 20% 97%;
+    --popover-foreground: 220 20% 18%;
 
-    --primary: 43 35% 55%;
-    --primary-foreground: 40 33% 97%;
+    --primary: 220 18% 58%;
+    --primary-foreground: 220 20% 97%;
 
-    --secondary: 150 20% 75%;
-    --secondary-foreground: 25 30% 20%;
+    --secondary: 180 15% 75%;
+    --secondary-foreground: 220 20% 18%;
 
-    --muted: 35 25% 90%;
-    --muted-foreground: 25 20% 45%;
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 12% 45%;
 
-    --accent: 8 35% 75%;
-    --accent-foreground: 25 30% 20%;
+    --accent: 280 12% 75%;
+    --accent-foreground: 220 20% 18%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 35 20% 85%;
-    --input: 35 20% 85%;
-    --ring: 43 35% 55%;
+    --border: 220 15% 86%;
+    --input: 220 15% 86%;
+    --ring: 220 18% 58%;
 
     --radius: 0.5rem;
 
     /* Custom wedding tokens */
-    --cream: 40 33% 97%;
-    --cream-dark: 35 30% 91%;
-    --ivory: 45 40% 95%;
-    --sage: 150 20% 60%;
-    --sage-light: 150 25% 85%;
-    --dusty-rose: 8 35% 75%;
-    --dusty-rose-light: 8 40% 93%;
-    --gold: 43 35% 55%;
-    --gold-dark: 43 40% 40%;
-    --olive: 45 30% 45%;
-    --brown: 25 30% 30%;
-    --brown-light: 25 25% 45%;
+    --cream: 220 20% 97%;
+    --cream-dark: 220 15% 92%;
+    --ivory: 220 18% 96%;
+    --sage: 180 15% 60%;
+    --sage-light: 180 18% 85%;
+    --dusty-rose: 280 12% 75%;
+    --dusty-rose-light: 280 15% 93%;
+    --gold: 220 18% 58%;
+    --gold-dark: 215 22% 42%;
+    --olive: 210 15% 48%;
+    --brown: 220 18% 25%;
+    --brown-light: 220 14% 42%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -60,33 +60,33 @@
   }
 
   .dark {
-    --background: 25 30% 10%;
-    --foreground: 40 33% 97%;
+    --background: 220 20% 10%;
+    --foreground: 220 20% 97%;
 
-    --card: 25 30% 12%;
-    --card-foreground: 40 33% 97%;
+    --card: 220 20% 12%;
+    --card-foreground: 220 20% 97%;
 
-    --popover: 25 30% 12%;
-    --popover-foreground: 40 33% 97%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 220 20% 97%;
 
-    --primary: 43 35% 55%;
-    --primary-foreground: 25 30% 10%;
+    --primary: 220 18% 58%;
+    --primary-foreground: 220 20% 10%;
 
-    --secondary: 150 15% 30%;
-    --secondary-foreground: 40 33% 97%;
+    --secondary: 180 12% 30%;
+    --secondary-foreground: 220 20% 97%;
 
-    --muted: 25 25% 20%;
-    --muted-foreground: 35 20% 65%;
+    --muted: 220 18% 20%;
+    --muted-foreground: 220 12% 65%;
 
-    --accent: 8 25% 40%;
-    --accent-foreground: 40 33% 97%;
+    --accent: 280 12% 40%;
+    --accent-foreground: 220 20% 97%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 25 20% 25%;
-    --input: 25 20% 25%;
-    --ring: 43 35% 55%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 220 18% 58%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -187,7 +187,7 @@
     background-color: hsl(var(--dusty-rose-light));
   }
 
-  /* Decorative elements */
+  /* Decorative silver elements */
   .floral-border {
     @apply border-2 p-1;
     border-color: hsl(var(--gold) / 0.3);
