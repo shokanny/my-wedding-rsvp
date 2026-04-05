@@ -71,7 +71,7 @@ const RSVPSection = () => {
       <motion.img
         src={flowerDecor}
         alt=""
-        className="absolute top-10 left-10 w-24 md:w-32 opacity-20"
+        className="absolute top-10 left-10 w-24 md:w-32 opacity-20 flower-silver"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.2 } : {}}
         transition={{ duration: 1 }}
@@ -79,7 +79,7 @@ const RSVPSection = () => {
       <motion.img
         src={flowerDecor}
         alt=""
-        className="absolute bottom-10 right-10 w-24 md:w-32 opacity-20 rotate-180"
+        className="absolute bottom-10 right-10 w-24 md:w-32 opacity-20 rotate-180 flower-silver"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.2 } : {}}
         transition={{ duration: 1, delay: 0.2 }}

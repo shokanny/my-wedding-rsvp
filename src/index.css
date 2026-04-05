@@ -187,6 +187,10 @@
     background-color: hsl(var(--dusty-rose-light));
   }
 
+  .flower-silver {
+    filter: brightness(1.4) saturate(0.1) hue-rotate(180deg);
+  }
+
   /* Decorative silver elements */
   .floral-border {
     @apply border-2 p-1;

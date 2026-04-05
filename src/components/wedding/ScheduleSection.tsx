@@ -12,7 +12,7 @@ const ScheduleSection = () => {
     { time: "17:00", event: "Ceremony" },
     { time: "18:00", event: "Dinner" },
     { time: "19:00", event: "Celebration" },
-    { time: "00:00", event: "End" },
+    { time: "23:00", event: "End" },
   ];
 
   return (

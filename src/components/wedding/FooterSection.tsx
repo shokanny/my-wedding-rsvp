@@ -57,7 +57,7 @@ const FooterSection = () => {
         <motion.img
           src={flowerDecor}
           alt=""
-          className="absolute bottom-4 left-1/2 -translate-x-1/2 w-32 opacity-40"
+          className="absolute bottom-4 left-1/2 -translate-x-1/2 w-32 opacity-40 flower-silver"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 0.4 } : {}}
           transition={{ duration: 1, delay: 0.4 }}

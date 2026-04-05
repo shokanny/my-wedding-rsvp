@@ -13,7 +13,7 @@ const AccommodationSection = () => {
       <motion.img
         src={flowerDecor}
         alt=""
-        className="absolute top-10 right-10 w-24 md:w-32 opacity-30"
+        className="absolute top-10 right-10 w-24 md:w-32 opacity-30 flower-silver"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.3 } : {}}
         transition={{ duration: 1 }}

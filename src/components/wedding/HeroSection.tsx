@@ -30,7 +30,7 @@ const HeroSection = () => {
       <motion.img
         src={leftBottomHome}
         alt=""
-        className="absolute bottom-20 left-4 md:left-10 w-24 md:w-32 lg:w-40 opacity-60"
+        className="absolute bottom-20 left-4 md:left-10 w-24 md:w-32 lg:w-40 opacity-60 flower-silver"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 0.6, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
@@ -39,7 +39,7 @@ const HeroSection = () => {
       <motion.img
         src={rightBottomFlower}
         alt=""
-        className="absolute bottom-20 right-4 md:right-10 w-24 md:w-32 lg:w-40 opacity-60"
+        className="absolute bottom-20 right-4 md:right-10 w-24 md:w-32 lg:w-40 opacity-60 flower-silver"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 0.6, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
