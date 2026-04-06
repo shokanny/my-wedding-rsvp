@@ -64,7 +64,7 @@ const FAQSection = () => {
               <h3 className="font-script text-on-gold text-xl md:text-2xl mb-4">
                 {faq.question}
               </h3>
-              <p className="font-body text-on-gold/80 text-sm leading-relaxed">
+              <p className="font-body text-on-gold text-sm leading-relaxed">
                 {faq.answer}
               </p>
               {"link" in faq && faq.link && (
