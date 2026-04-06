@@ -14,7 +14,7 @@ const HeroSection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute top-0 left-0 w-48 md:w-72 lg:w-80 opacity-80"
+        className="absolute top-0 left-0 w-48 md:w-72 lg:w-80 opacity-80 flower-silver"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 0.8, x: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
@@ -24,7 +24,7 @@ const HeroSection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute top-0 right-0 w-48 md:w-72 lg:w-80 opacity-80 -scale-x-100"
+        className="absolute top-0 right-0 w-48 md:w-72 lg:w-80 opacity-80 -scale-x-100 flower-silver"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 0.8, x: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -111,7 +111,7 @@ const HeroSection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute bottom-0 left-0 w-48 md:w-64 opacity-70 rotate-180"
+        className="absolute bottom-0 left-0 w-48 md:w-64 opacity-70 rotate-180 flower-silver"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 0.7, y: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
@@ -120,7 +120,7 @@ const HeroSection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute bottom-0 right-0 w-48 md:w-64 opacity-70 rotate-180 -scale-x-100"
+        className="absolute bottom-0 right-0 w-48 md:w-64 opacity-70 rotate-180 -scale-x-100 flower-silver"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 0.7, y: 0 }}
         transition={{ duration: 1, delay: 0.7 }}

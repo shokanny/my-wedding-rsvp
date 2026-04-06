@@ -16,7 +16,7 @@ const GiftRegistrySection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute top-0 left-0 w-32 md:w-48 opacity-50"
+        className="absolute top-0 left-0 w-32 md:w-48 opacity-50 flower-silver"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.5 } : {}}
         transition={{ duration: 1 }}
@@ -24,7 +24,7 @@ const GiftRegistrySection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute bottom-0 right-0 w-32 md:w-48 opacity-50 rotate-180"
+        className="absolute bottom-0 right-0 w-32 md:w-48 opacity-50 rotate-180 flower-silver"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.5 } : {}}
         transition={{ duration: 1, delay: 0.2 }}

@@ -17,7 +17,7 @@ const FooterSection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute top-0 left-0 w-32 opacity-30"
+        className="absolute top-0 left-0 w-32 opacity-30 flower-silver"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.3 } : {}}
         transition={{ duration: 1 }}
@@ -25,7 +25,7 @@ const FooterSection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute top-0 right-0 w-32 opacity-30 -scale-x-100"
+        className="absolute top-0 right-0 w-32 opacity-30 -scale-x-100 flower-silver"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 0.3 } : {}}
         transition={{ duration: 1, delay: 0.1 }}
