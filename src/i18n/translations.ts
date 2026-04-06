@@ -96,7 +96,7 @@ export const translations = {
     email: { en: "Email", ru: "Почта", kk: "Пошта" },
     optional: { en: "(optional)", ru: "(необязательно)", kk: "(міндетті емес)" },
     attending: { en: "Will you be attending?", ru: "Вы будете присутствовать?", kk: "Қатысасыз ба?" },
-    accepts: { en: "Joyfully accepts", ru: "С радостью приму", kk: "Қуана қабылдаймын" },
+    accepts: { en: "Joyfully accepts", ru: "С радостью придем", kk: "Қуана қабылдаймын" },
     declines: { en: "Regretfully declines", ru: "К сожалению, нет", kk: "Өкінішке орай, жоқ" },
     numGuests: { en: "Number of Guests", ru: "Количество гостей", kk: "Қонақтар саны" },
     guest: { en: "guest", ru: "гость", kk: "қонақ" },
