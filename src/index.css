@@ -36,15 +36,15 @@
     --radius: 0.5rem;
 
     /* Custom wedding tokens */
-    --cream: 220 20% 97%;
+    --cream: 0 0% 100%;
     --cream-dark: 220 15% 92%;
     --ivory: 220 18% 96%;
     --sage: 180 15% 60%;
     --sage-light: 180 18% 85%;
     --dusty-rose: 280 12% 75%;
     --dusty-rose-light: 280 15% 93%;
-    --gold: 220 18% 58%;
-    --gold-dark: 215 22% 42%;
+    --gold: 220 15% 52%;
+    --gold-dark: 215 20% 38%;
     --olive: 210 15% 48%;
     --brown: 220 18% 25%;
     --brown-light: 220 14% 42%;
@@ -188,7 +188,7 @@
   }
 
   .flower-silver {
-    filter: grayscale(0.8) brightness(1.5) contrast(0.9);
+    filter: grayscale(0.6) brightness(2) contrast(0.85);
   }
 
   /* Decorative silver elements */
