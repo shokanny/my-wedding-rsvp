@@ -17,17 +17,17 @@ const FooterSection = () => {
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute top-0 left-0 w-32 opacity-30"
+        className="absolute top-0 left-0 w-48 opacity-50"
         initial={{ opacity: 0 }}
-        animate={isInView ? { opacity: 0.3 } : {}}
+        animate={isInView ? { opacity: 0.5 } : {}}
         transition={{ duration: 1 }}
       />
       <motion.img
         src={floralCorner}
         alt=""
-        className="absolute top-0 right-0 w-32 opacity-30 -scale-x-100"
+        className="absolute top-0 right-0 w-48 opacity-50 -scale-x-100"
         initial={{ opacity: 0 }}
-        animate={isInView ? { opacity: 0.3 } : {}}
+        animate={isInView ? { opacity: 0.5 } : {}}
         transition={{ duration: 1, delay: 0.1 }}
       />
 
@@ -60,9 +60,9 @@ const FooterSection = () => {
         <motion.img
           src={flowerDecor}
           alt=""
-          className="absolute bottom-4 left-1/2 -translate-x-1/2 w-32 opacity-40"
+          className="absolute bottom-4 left-1/2 -translate-x-1/2 w-48 opacity-60"
           initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 0.4 } : {}}
+          animate={isInView ? { opacity: 0.6 } : {}}
           transition={{ duration: 1, delay: 0.4 }}
         />
       </div>
