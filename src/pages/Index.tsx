@@ -17,10 +17,10 @@ const Index = () => {
       <section id="rsvp">
         <RSVPSection />
       </section>
+      <FAQSection />
       <section id="registry">
         <GiftRegistrySection />
       </section>
-      <FAQSection />
       <FooterSection />
     </div>
   );
