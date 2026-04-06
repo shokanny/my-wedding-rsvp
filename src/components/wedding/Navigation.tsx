@@ -29,7 +29,6 @@ const Navigation = () => {
     { label: t(translations.nav.schedule, lang), href: "/#schedule" },
     { label: t(translations.nav.rsvp, lang), href: "/#rsvp" },
     { label: t(translations.nav.faq, lang), href: "/#details" },
-    { label: t(translations.nav.registry, lang), href: "/#registry" },
   ];
 
   const languages: { code: Language; label: string }[] = [
