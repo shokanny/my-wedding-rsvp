@@ -27,7 +27,6 @@ const Navigation = () => {
 
   const navLinks = [
     { label: t(translations.nav.schedule, lang), href: "/#schedule" },
-    { label: t(translations.nav.stay, lang), href: "/#accommodation" },
     { label: t(translations.nav.registry, lang), href: "/#registry" },
     { label: t(translations.nav.rsvp, lang), href: "/#rsvp" },
     { label: t(translations.nav.faq, lang), href: "/#details" },

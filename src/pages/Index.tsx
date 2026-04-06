@@ -1,7 +1,6 @@
 import Navigation from "@/components/wedding/Navigation";
 import HeroSection from "@/components/wedding/HeroSection";
 import ScheduleSection from "@/components/wedding/ScheduleSection";
-import AccommodationSection from "@/components/wedding/AccommodationSection";
 import GiftRegistrySection from "@/components/wedding/GiftRegistrySection";
 import RSVPSection from "@/components/wedding/RSVPSection";
 import FAQSection from "@/components/wedding/FAQSection";
@@ -14,9 +13,6 @@ const Index = () => {
       <HeroSection />
       <section id="schedule">
         <ScheduleSection />
-      </section>
-      <section id="accommodation">
-        <AccommodationSection />
       </section>
       <section id="registry">
         <GiftRegistrySection />

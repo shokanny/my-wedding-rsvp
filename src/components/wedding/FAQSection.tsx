@@ -17,7 +17,7 @@ const FAQSection = () => {
       question: t(translations.faq.whereQuestion, lang),
       answer: t(translations.faq.whereAnswer, lang),
       image: faq1,
-      link: "https://maps.app.goo.gl/XrHUemfraZqF6pKV8",
+      link: t(translations.faq.mapLink, lang),
     },
     {
       question: t(translations.faq.whenQuestion, lang),

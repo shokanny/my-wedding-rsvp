@@ -149,6 +149,11 @@ export const translations = {
       kk: "Классикалық дресс-код — сәнді және талғампаз. Қатаң ережелер жоқ, ең бастысы — сәнді болыңыз және өзіңізді жайлы сезініңіз!",
     },
     viewOnMap: { en: "View on Map", ru: "Открыть карту", kk: "Картадан көру" },
+    mapLink: {
+      en: "https://www.google.com/maps/place/Dilu+Plaza/@51.1463222,71.3481872,18z/data=!4m6!3m5!1s0x424587d3ad323c4b:0x72466e44ffb9c8ed!8m2!3d51.1463222!4d71.3481872!16s%2Fg%2F11sg974dvc?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D",
+      ru: "https://2gis.kz/astana/firm/70000001055312155?m=71.3489%2C51.145537%2F17.22",
+      kk: "https://2gis.kz/astana/firm/70000001055312155?m=71.3489%2C51.145537%2F17.22",
+    },
   },
 
   // Footer
