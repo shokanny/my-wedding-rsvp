@@ -6,7 +6,6 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { translations, t } from "@/i18n/translations";
 
 const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL || "";
-const VITE_RSVP_CODE = import.meta.env.VITE_RSVP_CODE || "";
 
 const RSVPSection = () => {
   const ref = useRef(null);
@@ -19,10 +18,8 @@ const RSVPSection = () => {
     attending: "",
     guests: "1",
     message: "",
-    code: "",
   });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
-  const [codeError, setCodeError] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -32,13 +29,6 @@ const RSVPSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    setCodeError(false);
-
-    if (formData.code.toUpperCase() !== VITE_RSVP_CODE.toUpperCase()) {
-      setCodeError(true);
-      return;
-    }
 
     if (!GOOGLE_SCRIPT_URL) {
       setStatus("error");
@@ -62,7 +52,7 @@ const RSVPSection = () => {
         body: params,
       });
       setStatus("success");
-      setFormData({ name: "", email: "", attending: "", guests: "1", message: "", code: "" });
+      setFormData({ name: "", email: "", attending: "", guests: "1", message: "" });
     } catch {
       setStatus("error");
     }
@@ -249,35 +239,6 @@ const RSVPSection = () => {
                   placeholder={t(translations.rsvp.messagePlaceholder, lang)}
                   className="w-full px-4 py-3 bg-transparent border border-brown/20 font-body text-brown text-sm placeholder:text-brown-light/50 focus:outline-none focus:border-gold transition-colors resize-none"
                 />
-              </div>
-
-              {/* Invitation Code */}
-              <div>
-                <label
-                  htmlFor="rsvp-code"
-                  className="block font-script text-brown text-lg mb-2"
-                >
-                  {t(translations.rsvp.invitationCode, lang)}
-                </label>
-                <input
-                  id="rsvp-code"
-                  name="code"
-                  type="text"
-                  required
-                  value={formData.code}
-                  onChange={(e) => {
-                    setCodeError(false);
-                    handleChange(e);
-                  }}
-                  placeholder={t(translations.rsvp.codePlaceholder, lang)}
-                  className="w-full px-4 py-3 bg-transparent border border-brown/20 font-body text-brown text-sm placeholder:text-brown-light/50 focus:outline-none focus:border-gold transition-colors uppercase tracking-widest"
-                  maxLength={6}
-                />
-                {codeError && (
-                  <p className="font-body text-sm text-red-600 mt-2">
-                    {t(translations.rsvp.codeError, lang)}
-                  </p>
-                )}
               </div>
 
               {/* Error message */}

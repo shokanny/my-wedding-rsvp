@@ -107,13 +107,6 @@ export const translations = {
       ru: "Диетические ограничения, пожелания по музыке или тёплые слова...",
       kk: "Тағам шектеулері, ән тілектері немесе жылы сөздер...",
     },
-    invitationCode: { en: "Invitation Code", ru: "Код приглашения", kk: "Шақыру коды" },
-    codePlaceholder: { en: "Enter your 6-character code", ru: "Введите 6-значный код", kk: "6 таңбалы кодты енгізіңіз" },
-    codeError: {
-      en: "Invalid invitation code. Please check and try again.",
-      ru: "Неверный код приглашения. Проверьте и попробуйте снова.",
-      kk: "Қате шақыру коды. Тексеріп, қайталаңыз.",
-    },
     errorGeneric: {
       en: "Something went wrong. Please try again.",
       ru: "Что-то пошло не так. Попробуйте ещё раз.",
