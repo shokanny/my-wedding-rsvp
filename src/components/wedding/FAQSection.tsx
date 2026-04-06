@@ -4,26 +4,29 @@ import { useRef } from "react";
 import faq1 from "@/assets/faq-1.png";
 import faq2 from "@/assets/faq-2.png";
 import faq3 from "@/assets/faq-3.png";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations, t } from "@/i18n/translations";
 
 const FAQSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { lang } = useLanguage();
 
   const faqs = [
     {
-      question: "Where will the wedding take place?",
-      answer: "Dilu Plaza. Korgalzhyn Highway E-126, 6A, Astana, Kazakhstan.",
+      question: t(translations.faq.whereQuestion, lang),
+      answer: t(translations.faq.whereAnswer, lang),
       image: faq1,
       link: "https://maps.app.goo.gl/XrHUemfraZqF6pKV8",
     },
     {
-      question: "What time should I arrive?",
-      answer: "Starts at 17:00. Dinner at 18:00, celebration at 19:00. Ends at 23:00. Please arrive at least 30 minutes before the ceremony starts so you have time to settle in.",
+      question: t(translations.faq.whenQuestion, lang),
+      answer: t(translations.faq.whenAnswer, lang),
       image: faq2,
     },
     {
-      question: "What should I wear?",
-      answer: "Classic dress code — smart and elegant. No strict rules, just come looking your best and feeling comfortable!",
+      question: t(translations.faq.dressQuestion, lang),
+      answer: t(translations.faq.dressAnswer, lang),
       image: faq3,
     },
   ];
@@ -38,7 +41,7 @@ const FAQSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="font-script text-on-gold text-5xl md:text-6xl lg:text-7xl mb-4">
-            Questions & Answers
+            {t(translations.faq.title, lang)}
           </h2>
           <div className="w-24 h-px mx-auto bg-gradient-to-r from-transparent via-cream to-transparent" />
         </motion.div>
@@ -46,7 +49,7 @@ const FAQSection = () => {
         <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
           {faqs.map((faq, index) => (
             <motion.div
-              key={faq.question}
+              key={index}
               className="text-center"
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -71,7 +74,7 @@ const FAQSection = () => {
                   rel="noopener noreferrer"
                   className="inline-block mt-3 font-body text-on-gold text-xs tracking-widest uppercase border-b border-on-gold/40 hover:border-on-gold transition-colors"
                 >
-                  View on Map
+                  {t(translations.faq.viewOnMap, lang)}
                 </a>
               )}
             </motion.div>

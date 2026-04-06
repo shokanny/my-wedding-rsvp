@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import flowerDecor from "@/assets/flower-.png";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations, t } from "@/i18n/translations";
 
 const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL || "";
 const VITE_RSVP_CODE = import.meta.env.VITE_RSVP_CODE || "";
@@ -9,6 +11,7 @@ const VITE_RSVP_CODE = import.meta.env.VITE_RSVP_CODE || "";
 const RSVPSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { lang } = useLanguage();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -93,11 +96,11 @@ const RSVPSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="font-script text-brown text-5xl md:text-6xl lg:text-7xl mb-4">
-            RSVP
+            {t(translations.rsvp.title, lang)}
           </h2>
           <div className="elegant-divider mb-6" />
           <p className="font-body text-brown-light text-sm tracking-wide">
-            We would be honored by your presence. Please let us know if your plans change.
+            {t(translations.rsvp.subtitle, lang)}
           </p>
         </motion.div>
 
@@ -115,10 +118,10 @@ const RSVPSection = () => {
               transition={{ duration: 0.5 }}
             >
               <h3 className="font-script text-brown text-3xl md:text-4xl mb-4">
-                Thank You!
+                {t(translations.rsvp.thankYou, lang)}
               </h3>
               <p className="font-body text-brown-light text-sm">
-                We've received your RSVP. We can't wait to celebrate with you!
+                {t(translations.rsvp.thankYouMessage, lang)}
               </p>
             </motion.div>
           ) : (
@@ -129,7 +132,7 @@ const RSVPSection = () => {
                   htmlFor="rsvp-name"
                   className="block font-script text-brown text-lg mb-2"
                 >
-                  Your Name
+                  {t(translations.rsvp.yourName, lang)}
                 </label>
                 <input
                   id="rsvp-name"
@@ -138,7 +141,7 @@ const RSVPSection = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Full name"
+                  placeholder={t(translations.rsvp.fullName, lang)}
                   className="w-full px-4 py-3 bg-transparent border border-brown/20 font-body text-brown text-sm placeholder:text-brown-light/50 focus:outline-none focus:border-gold transition-colors"
                 />
               </div>
@@ -149,8 +152,8 @@ const RSVPSection = () => {
                   htmlFor="rsvp-email"
                   className="block font-script text-brown text-lg mb-2"
                 >
-                  Email
-                  <span className="font-body text-brown-light text-xs ml-2">(optional)</span>
+                  {t(translations.rsvp.email, lang)}
+                  <span className="font-body text-brown-light text-xs ml-2">{t(translations.rsvp.optional, lang)}</span>
                 </label>
                 <input
                   id="rsvp-email"
@@ -166,7 +169,7 @@ const RSVPSection = () => {
               {/* Attending */}
               <div>
                 <label className="block font-script text-brown text-lg mb-3">
-                  Will you be attending?
+                  {t(translations.rsvp.attending, lang)}
                 </label>
                 <div className="flex gap-6">
                   <label className="flex items-center gap-2 cursor-pointer">
@@ -180,7 +183,7 @@ const RSVPSection = () => {
                       className="w-4 h-4 accent-[hsl(43,35%,55%)]"
                     />
                     <span className="font-body text-brown text-sm">
-                      Joyfully accepts
+                      {t(translations.rsvp.accepts, lang)}
                     </span>
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
@@ -193,7 +196,7 @@ const RSVPSection = () => {
                       className="w-4 h-4 accent-[hsl(43,35%,55%)]"
                     />
                     <span className="font-body text-brown text-sm">
-                      Regretfully declines
+                      {t(translations.rsvp.declines, lang)}
                     </span>
                   </label>
                 </div>
@@ -210,7 +213,7 @@ const RSVPSection = () => {
                     htmlFor="rsvp-guests"
                     className="block font-script text-brown text-lg mb-2"
                   >
-                    Number of Guests
+                    {t(translations.rsvp.numGuests, lang)}
                   </label>
                   <select
                     id="rsvp-guests"
@@ -221,7 +224,7 @@ const RSVPSection = () => {
                   >
                     {[1, 2, 3, 4, 5].map((n) => (
                       <option key={n} value={n}>
-                        {n} {n === 1 ? "guest" : "guests"}
+                        {n} {n === 1 ? t(translations.rsvp.guest, lang) : t(translations.rsvp.guests, lang)}
                       </option>
                     ))}
                   </select>
@@ -234,8 +237,8 @@ const RSVPSection = () => {
                   htmlFor="rsvp-message"
                   className="block font-script text-brown text-lg mb-2"
                 >
-                  Message
-                  <span className="font-body text-brown-light text-xs ml-2">(optional)</span>
+                  {t(translations.rsvp.message, lang)}
+                  <span className="font-body text-brown-light text-xs ml-2">{t(translations.rsvp.optional, lang)}</span>
                 </label>
                 <textarea
                   id="rsvp-message"
@@ -243,7 +246,7 @@ const RSVPSection = () => {
                   rows={3}
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Dietary restrictions, song requests, or a sweet note..."
+                  placeholder={t(translations.rsvp.messagePlaceholder, lang)}
                   className="w-full px-4 py-3 bg-transparent border border-brown/20 font-body text-brown text-sm placeholder:text-brown-light/50 focus:outline-none focus:border-gold transition-colors resize-none"
                 />
               </div>
@@ -254,7 +257,7 @@ const RSVPSection = () => {
                   htmlFor="rsvp-code"
                   className="block font-script text-brown text-lg mb-2"
                 >
-                  Invitation Code
+                  {t(translations.rsvp.invitationCode, lang)}
                 </label>
                 <input
                   id="rsvp-code"
@@ -266,13 +269,13 @@ const RSVPSection = () => {
                     setCodeError(false);
                     handleChange(e);
                   }}
-                  placeholder="Enter your 6-character code"
+                  placeholder={t(translations.rsvp.codePlaceholder, lang)}
                   className="w-full px-4 py-3 bg-transparent border border-brown/20 font-body text-brown text-sm placeholder:text-brown-light/50 focus:outline-none focus:border-gold transition-colors uppercase tracking-widest"
                   maxLength={6}
                 />
                 {codeError && (
                   <p className="font-body text-sm text-red-600 mt-2">
-                    Invalid invitation code. Please check and try again.
+                    {t(translations.rsvp.codeError, lang)}
                   </p>
                 )}
               </div>
@@ -281,8 +284,8 @@ const RSVPSection = () => {
               {status === "error" && (
                 <p className="font-body text-sm text-red-600 text-center">
                   {GOOGLE_SCRIPT_URL
-                    ? "Something went wrong. Please try again."
-                    : "RSVP is not yet connected. Please contact us directly."}
+                    ? t(translations.rsvp.errorGeneric, lang)
+                    : t(translations.rsvp.errorNotConnected, lang)}
                 </p>
               )}
 
@@ -295,7 +298,7 @@ const RSVPSection = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  {status === "sending" ? "Sending..." : "Send RSVP"}
+                  {status === "sending" ? t(translations.rsvp.sending, lang) : t(translations.rsvp.sendRsvp, lang)}
                 </motion.button>
               </div>
             </form>

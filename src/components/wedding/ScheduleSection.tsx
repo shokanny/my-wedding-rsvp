@@ -2,17 +2,20 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import couplePhoto from "@/assets/faq-1.png";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations, t } from "@/i18n/translations";
 
 const ScheduleSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { lang } = useLanguage();
 
   const events = [
-    { time: "17:00", event: "Arrival & Welcome" },
-    { time: "17:00", event: "Ceremony" },
-    { time: "18:00", event: "Dinner" },
-    { time: "19:00", event: "Celebration" },
-    { time: "23:00", event: "End" },
+    { time: "17:00", event: t(translations.schedule.arrival, lang) },
+    { time: "17:00", event: t(translations.schedule.ceremony, lang) },
+    { time: "18:00", event: t(translations.schedule.dinner, lang) },
+    { time: "19:00", event: t(translations.schedule.celebration, lang) },
+    { time: "23:00", event: t(translations.schedule.end, lang) },
   ];
 
   return (
@@ -43,10 +46,10 @@ const ScheduleSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="font-script text-on-gold text-5xl md:text-6xl lg:text-7xl mb-2">
-              Schedule of Events
+              {t(translations.schedule.title, lang)}
             </h2>
             <p className="font-body text-on-gold/80 tracking-widest uppercase text-sm mb-10">
-              The Day's Timeline
+              {t(translations.schedule.subtitle, lang)}
             </p>
 
             <div className="space-y-6">

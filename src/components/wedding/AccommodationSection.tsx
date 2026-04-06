@@ -2,10 +2,13 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import flowerDecor from "@/assets/flower-.png";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations, t } from "@/i18n/translations";
 
 const AccommodationSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { lang } = useLanguage();
 
   return (
     <section className="section-cream py-24 md:py-32 relative overflow-hidden">
@@ -27,19 +30,19 @@ const AccommodationSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="font-script text-brown text-5xl md:text-6xl lg:text-7xl mb-4">
-            Accommodation
+            {t(translations.accommodation.title, lang)}
           </h2>
           <div className="elegant-divider mb-10" />
-          
+
           <div className="space-y-6 font-body text-brown-light leading-relaxed">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              We're planning to arrange special accommodation for our guests!
+              {t(translations.accommodation.intro, lang)}
             </motion.p>
-            
+
             <motion.div
               className="bg-cream-dark p-8 rounded-lg"
               initial={{ opacity: 0, y: 20 }}
@@ -47,11 +50,10 @@ const AccommodationSection = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <h3 className="font-script text-brown text-2xl mb-4">
-                For Our Female Guests
+                {t(translations.accommodation.femaleTitle, lang)}
               </h3>
               <p className="text-sm">
-                We're looking into renting a place where our female friends can stay together. 
-                It'll be like a little gathering of its own!
+                {t(translations.accommodation.femaleDesc, lang)}
               </p>
             </motion.div>
 
@@ -62,11 +64,10 @@ const AccommodationSection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <h3 className="font-script text-brown text-2xl mb-4">
-                Additional Apartments
+                {t(translations.accommodation.aptTitle, lang)}
               </h3>
               <p className="text-sm">
-                We may also have one or two apartments available for other guests (depending on availability). 
-                More details will follow as we finalize the arrangements.
+                {t(translations.accommodation.aptDesc, lang)}
               </p>
             </motion.div>
 
@@ -76,7 +77,7 @@ const AccommodationSection = () => {
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Stay tuned — we'll share all the specifics soon!
+              {t(translations.accommodation.stayTuned, lang)}
             </motion.p>
           </div>
         </motion.div>

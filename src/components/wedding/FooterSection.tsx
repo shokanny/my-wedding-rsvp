@@ -3,10 +3,13 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import floralCorner from "@/assets/flower-laying-diagonal.png";
 import flowerDecor from "@/assets/right-bottom-flower.png";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations, t } from "@/i18n/translations";
 
 const FooterSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const { lang } = useLanguage();
 
   return (
     <footer className="section-cream py-12 md:py-16 relative overflow-hidden">
@@ -36,7 +39,7 @@ const FooterSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="font-script text-brown text-5xl md:text-6xl lg:text-7xl mb-6">
-            We Can't Wait to See You!
+            {t(translations.footer.cantWait, lang)}
           </h2>
         </motion.div>
         <motion.div
@@ -46,10 +49,10 @@ const FooterSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <p className="font-script text-brown text-3xl md:text-4xl mb-2">
-            Shokan & Ayazhan
+            {t(translations.footer.names, lang)}
           </p>
           <p className="font-body text-brown-light text-sm tracking-widest">
-            With love
+            {t(translations.footer.withLove, lang)}
           </p>
         </motion.div>
 

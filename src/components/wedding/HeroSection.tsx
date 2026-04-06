@@ -2,8 +2,12 @@ import { motion } from "framer-motion";
 import floralCorner from "@/assets/flower-laying-diagonal.png";
 import leftBottomHome from "@/assets/left-bottom-home.png";
 import rightBottomFlower from "@/assets/right-bottom-flower.png";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations, t } from "@/i18n/translations";
 
 const HeroSection = () => {
+  const { lang } = useLanguage();
+
   return (
     <section className="section-cream py-24 md:py-32 relative overflow-hidden flex items-center justify-center">
       {/* Decorative florals - top left */}
@@ -15,7 +19,7 @@ const HeroSection = () => {
         animate={{ opacity: 0.8, x: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
       />
-      
+
       {/* Decorative florals - top right (flipped) */}
       <motion.img
         src={floralCorner}
@@ -53,7 +57,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          You're Invited to
+          {t(translations.hero.invited, lang)}
         </motion.p>
 
         <motion.h1
@@ -62,7 +66,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          Shokan and Ayazhan Toi
+          {t(translations.hero.title, lang)}
         </motion.h1>
 
         <motion.div
@@ -78,7 +82,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          August 14, 2026
+          {t(translations.hero.date, lang)}
         </motion.p>
 
         <motion.p
@@ -87,7 +91,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.0 }}
         >
-          Astana, Kazakhstan
+          {t(translations.hero.location, lang)}
         </motion.p>
 
         <motion.a
@@ -99,7 +103,7 @@ const HeroSection = () => {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          View Details
+          {t(translations.hero.viewDetails, lang)}
         </motion.a>
       </div>
 
@@ -112,7 +116,7 @@ const HeroSection = () => {
         animate={{ opacity: 0.7, y: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
       />
-      
+
       <motion.img
         src={floralCorner}
         alt=""
