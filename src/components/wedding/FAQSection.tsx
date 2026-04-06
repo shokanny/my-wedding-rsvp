@@ -58,7 +58,7 @@ const FAQSection = () => {
               <motion.img
                 src={faq.image}
                 alt=""
-                className="w-24 h-24 mx-auto mb-6 opacity-80"
+                className="w-24 h-24 mx-auto mb-6 opacity-80 flower-silver"
                 whileHover={{ scale: 1.1 }}
               />
               <h3 className="font-script text-on-gold text-xl md:text-2xl mb-4">
