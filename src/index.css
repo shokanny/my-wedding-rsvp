@@ -188,7 +188,8 @@
   }
 
   .flower-silver {
-    filter: brightness(1.4) saturate(0.1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+    filter: brightness(1.2) saturate(0.2) sepia(0.3);
   }
 
   /* Decorative silver elements */
