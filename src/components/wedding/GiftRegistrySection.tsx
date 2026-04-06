@@ -11,7 +11,7 @@ const GiftRegistrySection = () => {
   const { lang } = useLanguage();
 
   return (
-    <section className="section-gold py-24 md:py-32 relative overflow-hidden">
+    <section className="section-cream py-24 md:py-32 relative overflow-hidden">
       {/* Decorative florals */}
       <motion.img
         src={floralCorner}
@@ -37,19 +37,19 @@ const GiftRegistrySection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="font-script text-on-gold text-5xl md:text-6xl lg:text-7xl mb-4">
+            <h2 className="font-script text-brown text-5xl md:text-6xl lg:text-7xl mb-4">
               {t(translations.registry.title, lang)}
             </h2>
-            <div className="w-32 h-px mx-auto bg-gradient-to-r from-transparent via-cream to-transparent mb-10" />
+            <div className="w-32 h-px mx-auto bg-gradient-to-r from-transparent via-gold to-transparent mb-10" />
           </motion.div>
 
           <motion.div
-            className="space-y-6 font-body text-on-gold/80"
+            className="space-y-6 font-body text-brown-light"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-lg md:text-xl font-script text-on-gold leading-relaxed">
+            <p className="text-lg md:text-xl font-script text-brown leading-relaxed">
               {t(translations.registry.presence, lang)}
             </p>
 
@@ -59,7 +59,7 @@ const GiftRegistrySection = () => {
 
             <motion.a
               href="#"
-              className="inline-block mt-8 px-10 py-3 bg-cream text-brown font-body text-sm tracking-widest uppercase hover:bg-cream-dark transition-colors duration-300"
+              className="inline-block mt-8 px-10 py-3 bg-gold text-on-gold font-body text-sm tracking-widest uppercase hover:bg-gold-dark transition-colors duration-300"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={(e) => {
@@ -70,7 +70,7 @@ const GiftRegistrySection = () => {
               {t(translations.registry.viewRegistry, lang)}
             </motion.a>
 
-            <p className="text-xs text-on-gold/60 mt-6 italic">
+            <p className="text-xs text-brown-light/60 mt-6 italic">
               {t(translations.registry.comingSoon, lang)}
             </p>
           </motion.div>

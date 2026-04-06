@@ -12,7 +12,7 @@ const FooterSection = () => {
   const { lang } = useLanguage();
 
   return (
-    <footer className="section-cream py-12 md:py-16 relative overflow-hidden">
+    <footer className="section-gold py-12 md:py-16 relative overflow-hidden">
       {/* Decorative elements */}
       <motion.img
         src={floralCorner}
@@ -38,7 +38,7 @@ const FooterSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-script text-brown text-5xl md:text-6xl lg:text-7xl mb-6">
+          <h2 className="font-script text-on-gold text-5xl md:text-6xl lg:text-7xl mb-6">
             {t(translations.footer.cantWait, lang)}
           </h2>
         </motion.div>
@@ -48,10 +48,10 @@ const FooterSection = () => {
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <p className="font-script text-brown text-3xl md:text-4xl mb-2">
+          <p className="font-script text-on-gold text-3xl md:text-4xl mb-2">
             {t(translations.footer.names, lang)}
           </p>
-          <p className="font-body text-brown-light text-sm tracking-widest">
+          <p className="font-body text-on-gold/80 text-sm tracking-widest">
             {t(translations.footer.withLove, lang)}
           </p>
         </motion.div>
